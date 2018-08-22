@@ -1,4 +1,4 @@
-// ccm.cpp - written and placed in the public domain by Wei Dai
+// ccm.cpp - originally written and placed in the public domain by Wei Dai
 
 #include "pch.h"
 
@@ -11,7 +11,6 @@ NAMESPACE_BEGIN(CryptoPP)
 void CCM_Base::SetKeyWithoutResync(const byte *userKey, size_t keylength, const NameValuePairs &params)
 {
 	BlockCipher &blockCipher = AccessBlockCipher();
-
 	blockCipher.SetKey(userKey, keylength, params);
 
 	if (blockCipher.BlockSize() != REQUIRED_BLOCKSIZE)
@@ -30,7 +29,7 @@ void CCM_Base::Resync(const byte *iv, size_t len)
 	BlockCipher &cipher = AccessBlockCipher();
 
 	m_L = REQUIRED_BLOCKSIZE-1-(int)len;
-	assert(m_L >= 2);
+	CRYPTOPP_ASSERT(m_L >= 2);
 	if (m_L > 8)
 		m_L = 8;
 
@@ -66,7 +65,7 @@ void CCM_Base::UncheckedSpecifyDataLengths(lword headerLength, lword messageLeng
 
 	if (headerLength>0)
 	{
-		assert(m_bufferedDataLength == 0);
+		CRYPTOPP_ASSERT(m_bufferedDataLength == 0);
 
 		if (headerLength < ((1<<16) - (1<<8)))
 		{

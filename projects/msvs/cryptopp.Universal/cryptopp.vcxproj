@@ -51,9 +51,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </None>
-    <None Include="..\..\..\bds10.zip" />
-    <None Include="..\..\..\config.recommend" />
-    <None Include="..\..\..\cryptdll.vcxproj">
+    <None Include="..\..\..\BUILD.gn">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
@@ -61,7 +59,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </None>
-    <None Include="..\..\..\cryptdll.vcxproj.filters">
+    <None Include="..\..\..\config.recommend">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
@@ -77,63 +75,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </None>
-    <None Include="..\..\..\cryptest.nmake">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </None>
     <None Include="..\..\..\cryptest.sh">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </None>
-    <None Include="..\..\..\cryptest.sln">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </None>
-    <None Include="..\..\..\cryptest.vcxproj">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </None>
-    <None Include="..\..\..\cryptest.vcxproj.filters">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </None>
-    <None Include="..\..\..\cryptest.vcxproj.user">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </None>
-    <None Include="..\..\..\cryptlib.vcxproj">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </None>
-    <None Include="..\..\..\cryptlib.vcxproj.filters">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
@@ -149,14 +91,8 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </None>
-    <None Include="..\..\..\dlltest.vcxproj">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </None>
+    <None Include="..\..\..\cryptopp.mapfile" />
+    <None Include="..\..\..\cryptopp.supp" />
     <None Include="..\..\..\Doxyfile">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
@@ -264,22 +200,6 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </None>
-    <None Include="..\..\..\vc60.zip">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </None>
-    <None Include="..\..\..\vs2005.zip">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </None>
     <CustomBuild Include="..\..\..\x64dll.asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
@@ -325,6 +245,16 @@
     <ClCompile Include="..\..\..\algebra.cpp" />
     <ClCompile Include="..\..\..\algparam.cpp" />
     <ClCompile Include="..\..\..\arc4.cpp" />
+    <ClCompile Include="..\..\..\aria-simd.cpp" />
+    <ClCompile Include="..\..\..\aria.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4456</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4456</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">4456</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">4456</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4456</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4456</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ariatab.cpp" />
     <ClCompile Include="..\..\..\asn.cpp" />
     <ClCompile Include="..\..\..\authenc.cpp" />
     <ClCompile Include="..\..\..\base32.cpp" />
@@ -353,6 +283,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\..\bfinit.cpp" />
+    <ClCompile Include="..\..\..\blake2-simd.cpp" />
     <ClCompile Include="..\..\..\blake2.cpp" />
     <ClCompile Include="..\..\..\blowfish.cpp" />
     <ClCompile Include="..\..\..\blumshub.cpp" />
@@ -365,6 +296,7 @@
     <ClCompile Include="..\..\..\channels.cpp" />
     <ClCompile Include="..\..\..\cmac.cpp" />
     <ClCompile Include="..\..\..\cpu.cpp" />
+    <ClCompile Include="..\..\..\crc-simd.cpp" />
     <ClCompile Include="..\..\..\crc.cpp" />
     <ClCompile Include="..\..\..\cryptlib.cpp" />
     <ClCompile Include="..\..\..\datatest.cpp">
@@ -424,6 +356,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="..\..\..\gcm-simd.cpp" />
     <ClCompile Include="..\..\..\gcm.cpp" />
     <ClCompile Include="..\..\..\gf256.cpp" />
     <ClCompile Include="..\..\..\gf2n.cpp" />
@@ -445,6 +378,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="..\..\..\kalyna.cpp" />
+    <ClCompile Include="..\..\..\kalynatab.cpp" />
     <ClCompile Include="..\..\..\keccak.cpp" />
     <ClCompile Include="..\..\..\luc.cpp" />
     <ClCompile Include="..\..\..\mars.cpp" />
@@ -457,9 +392,11 @@
     <ClCompile Include="..\..\..\mqueue.cpp" />
     <ClCompile Include="..\..\..\mqv.cpp" />
     <ClCompile Include="..\..\..\nbtheory.cpp" />
+    <ClCompile Include="..\..\..\neon-simd.cpp" />
     <ClCompile Include="..\..\..\network.cpp" />
     <ClCompile Include="..\..\..\oaep.cpp" />
     <ClCompile Include="..\..\..\osrng.cpp" />
+    <ClCompile Include="..\..\..\padlkrng.cpp" />
     <ClCompile Include="..\..\..\panama.cpp" />
     <ClCompile Include="..\..\..\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -470,7 +407,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="..\..\..\pkcspad.cpp" />
+    <ClCompile Include="..\..\..\poly1305.cpp" />
     <ClCompile Include="..\..\..\polynomi.cpp" />
+    <ClCompile Include="..\..\..\ppc-simd.cpp" />
     <ClCompile Include="..\..\..\pssr.cpp" />
     <ClCompile Include="..\..\..\pubkey.cpp" />
     <ClCompile Include="..\..\..\queue.cpp" />
@@ -489,6 +428,31 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="..\..\..\regtest1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\regtest2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\regtest3.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rijndael-simd.cpp" />
     <ClCompile Include="..\..\..\rijndael.cpp" />
     <ClCompile Include="..\..\..\ripemd.cpp" />
     <ClCompile Include="..\..\..\rng.cpp" />
@@ -496,20 +460,30 @@
     <ClCompile Include="..\..\..\rw.cpp" />
     <ClCompile Include="..\..\..\safer.cpp" />
     <ClCompile Include="..\..\..\salsa.cpp" />
+    <ClCompile Include="..\..\..\scrypt.cpp" />
     <ClCompile Include="..\..\..\seal.cpp" />
     <ClCompile Include="..\..\..\seed.cpp" />
     <ClCompile Include="..\..\..\serpent.cpp" />
+    <ClCompile Include="..\..\..\sha-simd.cpp" />
     <ClCompile Include="..\..\..\sha.cpp" />
     <ClCompile Include="..\..\..\sha3.cpp" />
+    <ClCompile Include="..\..\..\shacal2-simd.cpp" />
     <ClCompile Include="..\..\..\shacal2.cpp" />
     <ClCompile Include="..\..\..\shark.cpp" />
     <ClCompile Include="..\..\..\sharkbox.cpp" />
+    <ClCompile Include="..\..\..\simon-simd.cpp" />
+    <ClCompile Include="..\..\..\simon.cpp" />
     <ClCompile Include="..\..\..\simple.cpp" />
     <ClCompile Include="..\..\..\skipjack.cpp" />
+    <ClCompile Include="..\..\..\sm3.cpp" />
+    <ClCompile Include="..\..\..\sm4.cpp" />
     <ClCompile Include="..\..\..\socketft.cpp" />
     <ClCompile Include="..\..\..\sosemanuk.cpp" />
+    <ClCompile Include="..\..\..\speck-simd.cpp" />
+    <ClCompile Include="..\..\..\speck.cpp" />
     <ClCompile Include="..\..\..\square.cpp" />
     <ClCompile Include="..\..\..\squaretb.cpp" />
+    <ClCompile Include="..\..\..\sse-simd.cpp" />
     <ClCompile Include="..\..\..\strciphr.cpp" />
     <ClCompile Include="..\..\..\tea.cpp" />
     <ClCompile Include="..\..\..\test.cpp">
@@ -521,11 +495,21 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\..\tftables.cpp" />
+    <ClCompile Include="..\..\..\threefish.cpp" />
     <ClCompile Include="..\..\..\tiger.cpp" />
     <ClCompile Include="..\..\..\tigertab.cpp" />
     <ClCompile Include="..\..\..\trdlocal.cpp" />
     <ClCompile Include="..\..\..\ttmac.cpp" />
+    <ClCompile Include="..\..\..\tweetnacl.cpp" />
     <ClCompile Include="..\..\..\twofish.cpp" />
+    <ClCompile Include="..\..\..\validat0.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\validat1.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
@@ -550,6 +534,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="..\..\..\validat4.cpp" />
     <ClCompile Include="..\..\..\vmac.cpp" />
     <ClCompile Include="..\..\..\wait.cpp" />
     <ClCompile Include="..\..\..\wake.cpp" />
@@ -564,12 +549,14 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\3way.h" />
     <ClInclude Include="..\..\..\adler32.h" />
+    <ClInclude Include="..\..\..\adv-simd.h" />
     <ClInclude Include="..\..\..\aes.h" />
     <ClInclude Include="..\..\..\algebra.h" />
     <ClInclude Include="..\..\..\algparam.h" />
     <ClInclude Include="..\..\..\AllocatorWithNul.h" />
     <ClInclude Include="..\..\..\arc4.h" />
     <ClInclude Include="..\..\..\argnames.h" />
+    <ClInclude Include="..\..\..\aria.h" />
     <ClInclude Include="..\..\..\asn.h" />
     <ClInclude Include="..\..\..\authenc.h" />
     <ClInclude Include="..\..\..\base32.h" />
@@ -596,11 +583,13 @@
     <ClInclude Include="..\..\..\dh2.h" />
     <ClInclude Include="..\..\..\dll.h" />
     <ClInclude Include="..\..\..\dmac.h" />
+    <ClInclude Include="..\..\..\drbg.h" />
     <ClInclude Include="..\..\..\dsa.h" />
     <ClInclude Include="..\..\..\eax.h" />
     <ClInclude Include="..\..\..\ec2n.h" />
     <ClInclude Include="..\..\..\eccrypto.h" />
     <ClInclude Include="..\..\..\ecp.h" />
+    <ClInclude Include="..\..\..\ecpoint.h" />
     <ClInclude Include="..\..\..\elgamal.h" />
     <ClInclude Include="..\..\..\emsa2.h" />
     <ClInclude Include="..\..\..\eprecomp.h" />
@@ -618,6 +607,7 @@
     <ClInclude Include="..\..\..\gfpcrypt.h" />
     <ClInclude Include="..\..\..\gost.h" />
     <ClInclude Include="..\..\..\gzip.h" />
+    <ClInclude Include="..\..\..\hashfwd.h" />
     <ClInclude Include="..\..\..\hex.h" />
     <ClInclude Include="..\..\..\hkdf.h" />
     <ClInclude Include="..\..\..\hmac.h" />
@@ -627,6 +617,7 @@
     <ClInclude Include="..\..\..\idea.h" />
     <ClInclude Include="..\..\..\integer.h" />
     <ClInclude Include="..\..\..\iterhash.h" />
+    <ClInclude Include="..\..\..\kalyna.h" />
     <ClInclude Include="..\..\..\keccak.h" />
     <ClInclude Include="..\..\..\lubyrack.h" />
     <ClInclude Include="..\..\..\luc.h" />
@@ -642,16 +633,21 @@
     <ClInclude Include="..\..\..\modexppc.h" />
     <ClInclude Include="..\..\..\mqueue.h" />
     <ClInclude Include="..\..\..\mqv.h" />
+    <ClInclude Include="..\..\..\naclite.h" />
     <ClInclude Include="..\..\..\nbtheory.h" />
     <ClInclude Include="..\..\..\network.h" />
     <ClInclude Include="..\..\..\nr.h" />
     <ClInclude Include="..\..\..\oaep.h" />
     <ClInclude Include="..\..\..\oids.h" />
     <ClInclude Include="..\..\..\osrng.h" />
+    <ClInclude Include="..\..\..\ossig.h" />
+    <ClInclude Include="..\..\..\padlkrng.h" />
     <ClInclude Include="..\..\..\panama.h" />
     <ClInclude Include="..\..\..\pch.h" />
     <ClInclude Include="..\..\..\pkcspad.h" />
+    <ClInclude Include="..\..\..\poly1305.h" />
     <ClInclude Include="..\..\..\polynomi.h" />
+    <ClInclude Include="..\..\..\ppc-simd.h" />
     <ClInclude Include="..\..\..\pssr.h" />
     <ClInclude Include="..\..\..\pubkey.h" />
     <ClInclude Include="..\..\..\pwdbased.h" />
@@ -670,6 +666,7 @@
     <ClInclude Include="..\..\..\rw.h" />
     <ClInclude Include="..\..\..\safer.h" />
     <ClInclude Include="..\..\..\salsa.h" />
+    <ClInclude Include="..\..\..\scrypt.h" />
     <ClInclude Include="..\..\..\seal.h" />
     <ClInclude Include="..\..\..\secblock.h" />
     <ClInclude Include="..\..\..\seckey.h" />
@@ -680,20 +677,27 @@
     <ClInclude Include="..\..\..\sha3.h" />
     <ClInclude Include="..\..\..\shacal2.h" />
     <ClInclude Include="..\..\..\shark.h" />
+    <ClInclude Include="..\..\..\simon.h" />
     <ClInclude Include="..\..\..\simple.h" />
+    <ClInclude Include="..\..\..\siphash.h" />
     <ClInclude Include="..\..\..\skipjack.h" />
+    <ClInclude Include="..\..\..\sm3.h" />
+    <ClInclude Include="..\..\..\sm4.h" />
     <ClInclude Include="..\..\..\smartptr.h" />
     <ClInclude Include="..\..\..\socketft.h" />
     <ClInclude Include="..\..\..\sosemanuk.h" />
+    <ClInclude Include="..\..\..\speck.h" />
     <ClInclude Include="..\..\..\square.h" />
     <ClInclude Include="..\..\..\stdcpp.h" />
     <ClInclude Include="..\..\..\strciphr.h" />
     <ClInclude Include="..\..\..\tea.h" />
+    <ClInclude Include="..\..\..\threefish.h" />
     <ClInclude Include="..\..\..\tiger.h" />
     <ClInclude Include="..\..\..\trap.h" />
     <ClInclude Include="..\..\..\trdlocal.h" />
     <ClInclude Include="..\..\..\trunhash.h" />
     <ClInclude Include="..\..\..\ttmac.h" />
+    <ClInclude Include="..\..\..\tweetnacl.h" />
     <ClInclude Include="..\..\..\twofish.h" />
     <ClInclude Include="..\..\..\validate.h" />
     <ClInclude Include="..\..\..\vmac.h" />
@@ -709,7 +713,6 @@
     <ClInclude Include="..\..\..\zlib.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\..\..\CMakeLists.txt" />
     <Text Include="..\..\..\Filelist.txt">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
@@ -718,6 +721,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </Text>
+    <Text Include="..\..\..\History.txt" />
     <Text Include="..\..\..\Install.txt" />
     <Text Include="..\..\..\License.txt">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
@@ -747,43 +751,43 @@
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <AppContainerApplication>true</AppContainerApplication>
     <ApplicationType>Windows Store</ApplicationType>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
-    <WindowsTargetPlatformMinVersion>10.0.10586.0</WindowsTargetPlatformMinVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.17134.0</WindowsTargetPlatformMinVersion>
     <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -845,6 +849,11 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>true</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>WINUWP;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -854,6 +863,7 @@
     <Lib>
       <AdditionalOptions>/ignore:4264,4221 %(AdditionalOptions)</AdditionalOptions>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\..\..\webrtc\xplatform\webrtc\WEBRTC_BUILD\ortc\$(Configuration)\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -861,6 +871,11 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>true</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>WINUWP;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -870,6 +885,7 @@
     <Lib>
       <AdditionalOptions>/ignore:4264,4221 %(AdditionalOptions)</AdditionalOptions>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\..\..\webrtc\xplatform\webrtc\WEBRTC_BUILD\ortc\$(Configuration)\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
@@ -877,6 +893,11 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>true</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>WINUWP;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -885,6 +906,7 @@
     </Link>
     <Lib>
       <AdditionalOptions>/ignore:4264,4221 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\..\..\webrtc\xplatform\webrtc\WEBRTC_BUILD\ortc\$(Configuration)\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
@@ -892,6 +914,11 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>true</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>WINUWP;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -900,6 +927,7 @@
     </Link>
     <Lib>
       <AdditionalOptions>/ignore:4264,4221 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\..\..\webrtc\xplatform\webrtc\WEBRTC_BUILD\ortc\$(Configuration)\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -907,6 +935,11 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>true</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <WarningLevel>Level4</WarningLevel>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>WINUWP;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -916,6 +949,7 @@
     <Lib>
       <AdditionalOptions>/ignore:4264,4221 %(AdditionalOptions)</AdditionalOptions>
       <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\..\..\webrtc\xplatform\webrtc\WEBRTC_BUILD\ortc\$(Configuration)\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -923,6 +957,11 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>true</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>WINUWP;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -932,6 +971,7 @@
     <Lib>
       <AdditionalOptions>/ignore:4264,4221 %(AdditionalOptions)</AdditionalOptions>
       <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\..\..\webrtc\xplatform\webrtc\WEBRTC_BUILD\ortc\$(Configuration)\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

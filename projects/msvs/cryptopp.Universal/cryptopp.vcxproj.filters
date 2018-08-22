@@ -10,21 +10,10 @@
     <None Include="..\..\..\.gitattributes" />
     <None Include="..\..\..\.gitignore" />
     <None Include="..\..\..\adhoc.cpp.proto" />
-    <None Include="..\..\..\bds10.zip" />
     <None Include="..\..\..\config.recommend" />
-    <None Include="..\..\..\cryptdll.vcxproj" />
-    <None Include="..\..\..\cryptdll.vcxproj.filters" />
-    <None Include="..\..\..\cryptest.nmake" />
     <None Include="..\..\..\cryptest.sh" />
-    <None Include="..\..\..\cryptest.sln" />
-    <None Include="..\..\..\cryptest.vcxproj" />
-    <None Include="..\..\..\cryptest.vcxproj.filters" />
-    <None Include="..\..\..\cryptest.vcxproj.user" />
     <None Include="..\..\..\cryptest-ios.sh" />
-    <None Include="..\..\..\cryptlib.vcxproj" />
-    <None Include="..\..\..\cryptlib.vcxproj.filters" />
     <None Include="..\..\..\cryptopp-config.cmake" />
-    <None Include="..\..\..\dlltest.vcxproj" />
     <None Include="..\..\..\Doxyfile" />
     <None Include="..\..\..\GNUmakefile" />
     <None Include="..\..\..\GNUmakefile-cross" />
@@ -34,8 +23,9 @@
     <None Include="..\..\..\setenv-android.sh" />
     <None Include="..\..\..\setenv-embedded.sh" />
     <None Include="..\..\..\setenv-ios.sh" />
-    <None Include="..\..\..\vc60.zip" />
-    <None Include="..\..\..\vs2005.zip" />
+    <None Include="..\..\..\BUILD.gn" />
+    <None Include="..\..\..\cryptopp.mapfile" />
+    <None Include="..\..\..\cryptopp.supp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\3way.cpp" />
@@ -174,6 +164,36 @@
     <ClCompile Include="..\..\..\zdeflate.cpp" />
     <ClCompile Include="..\..\..\zinflate.cpp" />
     <ClCompile Include="..\..\..\zlib.cpp" />
+    <ClCompile Include="..\..\..\aria.cpp" />
+    <ClCompile Include="..\..\..\aria-simd.cpp" />
+    <ClCompile Include="..\..\..\ariatab.cpp" />
+    <ClCompile Include="..\..\..\blake2-simd.cpp" />
+    <ClCompile Include="..\..\..\crc-simd.cpp" />
+    <ClCompile Include="..\..\..\gcm-simd.cpp" />
+    <ClCompile Include="..\..\..\kalyna.cpp" />
+    <ClCompile Include="..\..\..\kalynatab.cpp" />
+    <ClCompile Include="..\..\..\neon-simd.cpp" />
+    <ClCompile Include="..\..\..\padlkrng.cpp" />
+    <ClCompile Include="..\..\..\poly1305.cpp" />
+    <ClCompile Include="..\..\..\ppc-simd.cpp" />
+    <ClCompile Include="..\..\..\regtest1.cpp" />
+    <ClCompile Include="..\..\..\regtest2.cpp" />
+    <ClCompile Include="..\..\..\regtest3.cpp" />
+    <ClCompile Include="..\..\..\rijndael-simd.cpp" />
+    <ClCompile Include="..\..\..\scrypt.cpp" />
+    <ClCompile Include="..\..\..\shacal2-simd.cpp" />
+    <ClCompile Include="..\..\..\sha-simd.cpp" />
+    <ClCompile Include="..\..\..\simon.cpp" />
+    <ClCompile Include="..\..\..\simon-simd.cpp" />
+    <ClCompile Include="..\..\..\sm3.cpp" />
+    <ClCompile Include="..\..\..\sm4.cpp" />
+    <ClCompile Include="..\..\..\speck.cpp" />
+    <ClCompile Include="..\..\..\speck-simd.cpp" />
+    <ClCompile Include="..\..\..\sse-simd.cpp" />
+    <ClCompile Include="..\..\..\threefish.cpp" />
+    <ClCompile Include="..\..\..\tweetnacl.cpp" />
+    <ClCompile Include="..\..\..\validat0.cpp" />
+    <ClCompile Include="..\..\..\validat4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\3way.h" />
@@ -321,13 +341,32 @@
     <ClInclude Include="..\..\..\zinflate.h" />
     <ClInclude Include="..\..\..\zlib.h" />
     <ClInclude Include="..\..\..\AllocatorWithNul.h" />
+    <ClInclude Include="..\..\..\adv-simd.h" />
+    <ClInclude Include="..\..\..\aria.h" />
+    <ClInclude Include="..\..\..\drbg.h" />
+    <ClInclude Include="..\..\..\ecpoint.h" />
+    <ClInclude Include="..\..\..\hashfwd.h" />
+    <ClInclude Include="..\..\..\kalyna.h" />
+    <ClInclude Include="..\..\..\naclite.h" />
+    <ClInclude Include="..\..\..\ossig.h" />
+    <ClInclude Include="..\..\..\padlkrng.h" />
+    <ClInclude Include="..\..\..\poly1305.h" />
+    <ClInclude Include="..\..\..\ppc-simd.h" />
+    <ClInclude Include="..\..\..\scrypt.h" />
+    <ClInclude Include="..\..\..\simon.h" />
+    <ClInclude Include="..\..\..\siphash.h" />
+    <ClInclude Include="..\..\..\sm3.h" />
+    <ClInclude Include="..\..\..\sm4.h" />
+    <ClInclude Include="..\..\..\speck.h" />
+    <ClInclude Include="..\..\..\threefish.h" />
+    <ClInclude Include="..\..\..\tweetnacl.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\..\..\CMakeLists.txt" />
     <Text Include="..\..\..\Filelist.txt" />
     <Text Include="..\..\..\Install.txt" />
     <Text Include="..\..\..\License.txt" />
     <Text Include="..\..\..\Readme.txt" />
+    <Text Include="..\..\..\History.txt" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\..\..\cryptopp.rc">

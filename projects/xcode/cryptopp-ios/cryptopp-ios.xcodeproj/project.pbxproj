@@ -20,7 +20,7 @@
 		009BBBDA1D97511000B6B633 /* blake2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA381D97501800B6B633 /* blake2.cpp */; };
 		009BBBDB1D97511000B6B633 /* blowfish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA3A1D97501800B6B633 /* blowfish.cpp */; };
 		009BBBDC1D97511000B6B633 /* blumshub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA3C1D97501800B6B633 /* blumshub.cpp */; };
-		009BBBDD1D97511000B6B633 /* camellia.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA3E1D97501800B6B633 /* camellia.cpp */; };
+		009BBBDD1D97511000B6B633 /* camellia.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA3E1D97501800B6B633 /* camellia.cpp */; settings = {COMPILER_FLAGS = "-Wno-shadow"; }; };
 		009BBBDE1D97511000B6B633 /* cast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA401D97501800B6B633 /* cast.cpp */; };
 		009BBBDF1D97511000B6B633 /* casts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA421D97501800B6B633 /* casts.cpp */; };
 		009BBBE01D97511000B6B633 /* cbcmac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA431D97501800B6B633 /* cbcmac.cpp */; };
@@ -34,7 +34,7 @@
 		009BBBE81D97511000B6B633 /* default.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA641D97501800B6B633 /* default.cpp */; };
 		009BBBE91D97511000B6B633 /* des.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA661D97501800B6B633 /* des.cpp */; };
 		009BBBEA1D97511000B6B633 /* dessp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA681D97501800B6B633 /* dessp.cpp */; };
-		009BBBEB1D97511000B6B633 /* dh2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA6B1D97501800B6B633 /* dh2.cpp */; };
+		009BBBEB1D97511000B6B633 /* dh2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA6B1D97501800B6B633 /* dh2.cpp */; settings = {COMPILER_FLAGS = "-Wno-null-dereference"; }; };
 		009BBBEC1D97511000B6B633 /* dll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA6D1D97501800B6B633 /* dll.cpp */; };
 		009BBBED1D97511000B6B633 /* dsa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA731D97501800B6B633 /* dsa.cpp */; };
 		009BBBEE1D97511000B6B633 /* eax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA751D97501800B6B633 /* eax.cpp */; };
@@ -128,7 +128,7 @@
 		009BBC491D97511000B6B633 /* zinflate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBBCB1D97501900B6B633 /* zinflate.cpp */; settings = {COMPILER_FLAGS = "-Wno-shorten-64-to-32"; }; };
 		009BBC4A1D97511000B6B633 /* zlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBBCD1D97501900B6B633 /* zlib.cpp */; };
 		009BBC4C1D97613700B6B633 /* algparam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBA241D97501700B6B633 /* algparam.cpp */; };
-		009BBC4D1D9764EF00B6B633 /* rsa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBB0B1D97501900B6B633 /* rsa.cpp */; };
+		009BBC4D1D9764EF00B6B633 /* rsa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 009BBB0B1D97501900B6B633 /* rsa.cpp */; settings = {COMPILER_FLAGS = "-Wno-undefined-var-template"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1311,14 +1311,17 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_SHADOW = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
@@ -1358,9 +1361,12 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_SHADOW = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;

@@ -1,4 +1,4 @@
-// tiger.cpp - written and placed in the public domain by Wei Dai
+// tiger.cpp - originally written and placed in the public domain by Wei Dai
 
 #include "pch.h"
 #include "config.h"
@@ -6,6 +6,13 @@
 #include "tiger.h"
 #include "misc.h"
 #include "cpu.h"
+
+#if defined(CRYPTOPP_DISABLE_TIGER_ASM)
+# undef CRYPTOPP_X86_ASM_AVAILABLE
+# undef CRYPTOPP_X32_ASM_AVAILABLE
+# undef CRYPTOPP_X64_ASM_AVAILABLE
+# undef CRYPTOPP_SSE2_ASM_AVAILABLE
+#endif
 
 NAMESPACE_BEGIN(CryptoPP)
 
@@ -34,7 +41,7 @@ void Tiger::TruncatedFinal(byte *hash, size_t size)
 
 void Tiger::Transform (word64 *digest, const word64 *X)
 {
-#if CRYPTOPP_BOOL_SSE2_ASM_AVAILABLE && (CRYPTOPP_BOOL_X86 || CRYPTOPP_BOOL_X32)
+#if CRYPTOPP_SSE2_ASM_AVAILABLE && (CRYPTOPP_BOOL_X86 || CRYPTOPP_BOOL_X32)
 	if (HasSSE2())
 	{
 #ifdef __GNUC__
@@ -43,12 +50,7 @@ void Tiger::Transform (word64 *digest, const word64 *X)
 		INTEL_NOPREFIX
 		AS_PUSH_IF86(bx)
 #else
-	#if _MSC_VER < 1300
-		const word64 *t = table;
-		AS2(	mov		edx, t)
-	#else
 		AS2(	lea		edx, [table])
-	#endif
 		AS2(	mov		eax, digest)
 		AS2(	mov		esi, X)
 #endif
