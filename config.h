@@ -270,11 +270,11 @@ const lword LWORD_MAX = W64LIT(0xffffffffffffffff);
 
 // Clang pretends to be VC++, too.
 //   See http://github.com/weidai11/cryptopp/issues/147
-#ifndef CRYPTOPP_IGNORE_CALNG_LIMITATION
+#ifndef CRYPTOPP_IGNORE_CLANG_LIMITATION
     #if defined(_MSC_VER) && defined(__clang__)
         # error: "Unsupported configuration"
     #endif
-#endif //CRYPTOPP_IGNORE_CALNG_LIMITATION
+#endif //CRYPTOPP_IGNORE_CLANG_LIMITATION
 
 #ifdef __GNUC__
 	#define CRYPTOPP_GCC_VERSION (__GNUC__ * 10000 + __GNUC_MINOR__ * 100 + __GNUC_PATCHLEVEL__)
