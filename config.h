@@ -64,7 +64,7 @@
 // above), NEON, Aarch32, Aarch64, Power4, Power7 or Power8. Note the compiler
 // may use higher ISAs depending on compiler options, but the library will not
 // explictly use the ISAs.
-#define CRYPTOPP_DISABLE_ASM 1
+//#define CRYPTOPP_DISABLE_ASM 1
 
 // Define CRYPTOPP_NO_CXX11 to avoid C++11 related features shown at the
 // end of this file. Some compilers and standard C++ headers advertise C++11

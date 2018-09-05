@@ -5,9 +5,22 @@
 config("cryptopp_config") {
 # cflags = [ "/WX-" ]
   cflags = []
-  if (is_win && current_os != "winuwp")
+  if (is_win)
   {
-    cflags += ["/EHsc"]
+    if (current_os != "winuwp")
+    {
+      cflags += ["/EHsc"]
+      defines = [
+        "CRYPTOPP_IGNORE_CLANG_LIMITATION",
+      ]
+    } else {
+      if (current_cpu == "arm")
+      {
+        defines = [
+          "CRYPTOPP_DISABLE_ASM",
+        ]
+      }
+    }
   }
 }
 
