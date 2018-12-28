@@ -30,7 +30,11 @@
 #include "stdcpp.h"
 
 #if (CRYPTOPP_ARM_NEON_AVAILABLE)
-# include <arm_neon.h>
+# if defined(_M_ARM64)
+#   include <arm64_neon.h>
+# else
+#   include <arm_neon.h>
+# endif
 #endif
 
 #if (CRYPTOPP_SSSE3_AVAILABLE)
