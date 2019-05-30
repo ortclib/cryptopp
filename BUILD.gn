@@ -14,7 +14,7 @@ config("cryptopp_config") {
         "CRYPTOPP_IGNORE_CLANG_LIMITATION",
       ]
     } else {
-      if (current_cpu == "arm")
+      if (current_cpu == "arm" || current_cpu == "arm64")
       {
         defines = [
           "CRYPTOPP_DISABLE_ASM",
